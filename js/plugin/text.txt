@@ -1,0 +1,5 @@
+jquery.pseudo.js   解决IE8不支持：before，after伪类问题
+json2.js           json解析
+jquery.params.js   页面之间传递数据
+group.js           自己写的二级，三级省市区联动
+echarts.min.js     图形，K线图插件

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywordes" content="关键字">
+	<title>商城转换中心</title>
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<!-- <link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/index.css"> -->
+	<style type="text/css">
+	*{margin: 0;padding: 0;}
+	input{width: 100px;height: 38px;}
+		.deal-box{width: 500px;margin:50px auto;border: 1px solid #ccc;padding: 20px;background-color: #f1f1f1;}
+		.zrj{height: 40px;border: 1px solid #ccc;}
+		.zrj .zrj-tit{float: left;display: inline-block;line-height: 40px;}
+		.zrj .zrj-change{float: right;display: inline-block;}
+		.zrj .zrj-change button{width: 32px;height: 40px;}
+		.tuijuan span{padding: 0 10px;}
+		.tuijuanl{margin-top: 20px;}
+		.tuijuan{margin: 15px 0 10px;}
+	</style>
+</head>
+<body>
+	<div class="deal-box">
+		<h3>可转入商品：<span id="buyALL">5000</span></h3>
+		<div class="zrj layui-clear">
+			<span class="zrj-tit">转入价LJH</span>
+			<div class="zrj-change">
+				<button class="zrj-less">-</button>
+				<input claSS="zrj-input" type="text" value="12.35" disabled="disabled">
+				<button class="zrj-more">+</button>
+			</div>
+		</div>
+		<h3 class="tuijuanl">推荐转入量，已购商品价值的整数倍</h3>
+		<div class="tuijuan">
+			<span>最大</span>
+			<span>2127.66</span>
+			<span class="aaaa">1702.13</span>
+			<span>1276.6</span>
+			<span>815.06</span>
+			<span>212.773</span>
+			<span>最小</span>
+		</div>
+		<div class="zrj zrj-num">
+			<span class="zrj-tit">可转入量NC</span>
+			<div class="zrj-change">
+				<button class="zrj-less11">-</button>
+				<input claSS="zrj-input11" type="text" value="1702.13" disabled="disabled">
+				<button class="zrj-more11">+</button>
+			</div>
+		</div>
+		<h3 style="margin-top:15px;">预计交易金额：<span class="yuji"></span></h3>
+	</div>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="layui/layui.all.js"></script>
+	<script>
+	$(function(){
+		var zrj_input = Number($(".zrj-input").val());
+		var zrj_input11 = Number($(".zrj-input11").val());
+		var yuji = (zrj_input*zrj_input11).toFixed(3);
+		function yujii (){
+	    	$('.yuji').text(yuji);
+	    }
+	    yujii();
+
+	    $(".zrj-less").click(function(){
+	    	var zj = 0.01;
+	        var n=$(this).next().val();
+	        var num=(n-zj).toFixed(2);
+	        if(num==0){return;}
+	        $(this).next().val(num);
+	        console.log(n);
+	        console.log($('.zrj-input').val());
+	        yujii();
+	    });
+
+	    $(".zrj-more").click(function(){
+	    	var zj = 0.01;
+	    	var zjj = Number(0.01)
+	        var n=Number($(this).prev().val());
+	        var num=(n+zjj).toFixed(2);
+	        $(this).prev().val(num);
+	        console.log($('.zrj-input').val());
+	        yujii();
+	    });
+	    $(".zrj-less11").click(function(){
+	    	var zj = $(this).next().val();
+	        var n=Number(zj);
+	        var zj333 = $('.aaaa').text();
+	        var n1 = Number(zj333)
+	        var num=(n-n1).toFixed(2);
+	        if(num==0){return;}
+	        $(this).next().val(num);
+	        console.log(n);
+	        console.log($('.zrj-input11').val());
+	        yujii();
+	        // alert(12);
+	    });
+
+	    $(".zrj-more11").click(function(){
+	    	var zj = $('.aaaa').text();
+	    	var zjj = Number(zj)
+	        var n=Number($(this).prev().val());
+	        var num=(n+zjj).toFixed(2);
+	        $(this).prev().val(num);
+	        console.log($('.zrj-input11').val());
+	        yujii();
+	    });
+	    console.log(yuji);
+	    
+
+	})
+	</script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywordes" content="关键字">
+	<title>用户中心-实名认证</title>
+	<link rel="stylesheet" href="../layui/css/layui.css">
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+	<!-- 导航，顶部 -->
+	<div class="topbar">
+		<div class="top-nav-content">
+			<div class="top-bar-news">
+				<span>流程：</span> 
+				<a href="../financeCenter/personal_recharge.html"><span>充值</span><em></em></a>
+				<a href="../shoppingMall/mallinto.html"><span>购物得联合金</span><em></em></a>
+				<a href="../transCenter/market.html"><span>转换商品值<i class="layui-badge-dot"></i></span><em></em></a>
+				<a href="../shoppingMall/mallout.html"><span>联合金购物</span><em></em></a>
+				<a href="../transCenter/market.html"><span>转出联合金<i class="layui-badge-dot"></i></span><em></em></a>
+				<a href="../financeCenter/personal_carryShow.html"><span>提现</span></a>
+			</div>
+			<ul class="layui-nav topbar-ul" style="display:none;">
+				<li class="layui-nav-item">
+					<a class="nav-list user_phone" href="../userCenter/user_account.html"></a>
+				</li>
+				<li class="layui-nav-item">
+					<a class="nav-list login_out" href="javascript:;">退出</a>
+				</li>
+			</ul>
+			<ul class="layui-nav top-nav-register">
+				<li class="nav-register-login">
+					<a href="../login/login.html">登录</a>
+				</li>
+				<li>|</li>
+				<li class="nav-register-reg">
+					<a href="../login/register.html">注册</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="head-nav">
+		<div class="head-nav-li">
+			<a class="head-nav-logo" href="javascript:;">
+				<h1><img src="../images/nav-logo.png" alt=""></h1>
+			</a>
+			<div class="navbar-box layui-clear" style="display:none;">
+				<a class="topbar-shop-cart" href="../shoppingMall/shop_cart.html">
+					<label>
+						<i class="layui-icon topbar-icon">&#xe657;</i>
+						<em class="layui-badge" style="display:none;">99</em>
+					</label>
+					<span class="shopping-text">购物车</span>
+				</a>
+			</div>
+			<ul class="layui-nav">
+				<li class="layui-nav-item">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="../shoppingMall/mallinto.html">转换商城</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="../transCenter/market.html">转换中心</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="../financeCenter/personal_assets.html">资产管理</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item layui-this">
+					<a href="../userCenter/user_account.html">个人中心</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="../helpCenter/about_us.html">帮助</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 登录 -->
+	<div class="content financeCenter layui-clear">
+		<div class="slide-nav">
+			<h3><i><img src="../images/Frame_user.png" alt=""></i>个人中心</h3>
+			<ul class="layui-nav layui-nav-tree" lay-filter="demo" style="margin-right: 10px;">
+				<li class="layui-nav-item layui-this">
+					<a href="user_account.html">账户设置</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="user_order.html">我的订单</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="user_address.html">收货地址</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="user_register.html">登录记录</a>
+				</li>
+			</ul>
+		</div>
+		<div class="finance-content">
+			<div class="volume">
+				<h4 class="notice">
+					<em><i class="layui-icon">&#xe645;</i>系统公告</em><a href="javascript:;">联金行-旨在服务实体经济</a>
+				</h4>
+			</div>
+			<!-- 待认证 -->
+			<div class="authen-cont stay-authen">
+				<h3>温馨提示：为了全方位保障您的资产安全，同时响应国家反洗钱政策，请您配合完成相关验证。</h3>
+				<form class="authen-form" action="" id="authen"><!--  enctype="multipart/form-data" -->
+					<div class="authen-form-item">
+			            <label class="authen-form-label">真实姓名：</label>
+			            <div class="authen-input-block">
+			                <input type="text" name="realname" placeholder="请输入真实姓名" class="authen-input auth_name">
+			            </div>
+			        </div>
+			        <input type="hidden" name="account" placeholder="" class="authen-input accountVal">
+			        <div class="authen-form-item">
+			            <label class="authen-form-label">身份证号：</label>
+			            <div class="authen-input-block">
+			                <input type="text" placeholder="请输入身份证号码" name="cert_id_num" class="authen-input card_id">
+			            </div>
+			        </div>
+			        <div class="file-item layui-clear">
+			        	<div class="file-rend layui-clear">
+			        		<label class="file-label">
+			        			<p>本人身份证正面照片</p>
+			        			<p>仅支持jpg，bmp，png格式，大小限制在1MB以内</p>
+			        		</label>
+			            	<div class="file-box">
+			            		<a href="javascript:;">点击上传</a>
+			            	    <input class="file-btn1" type="file" name="pic_front">
+			            	    <div class="file-img">
+			            	    	<img id="preview1" alt="">
+			            	    </div>
+			            	</div>
+						</div>
+						<div class="exampleImg-box">
+							<img src="../images/example-contactCardFace.jpg" alt="">
+						</div>
+					</div>
+					<div class="file-item layui-clear">
+			        	<div class="file-rend layui-clear">
+			        		<label class="file-label">
+			        			<p>本人身份证反面照片</p>
+			        			<p>仅支持jpg，bmp，png格式，大小限制在1MB以内</p>
+			        		</label>
+			            	<div class="file-box">
+			            		<a href="javascript:;">点击上传</a>
+			            	    <input class="file-btn2" type="file" name="pic_side">
+			            	    <div class="file-img">
+			            	    	<img id="preview2" alt="">
+			            	    </div>
+			            	</div>
+						</div>
+						<div class="exampleImg-box">
+							<img src="../images/example-contactCardRear.jpg" alt="">
+						</div>
+					</div>
+					<div class="file-item layui-clear">
+			        	<div class="file-rend layui-clear">
+			        		<label class="file-label">
+			        			<p>手持身份证照片</p>
+			        			<p>仅支持jpg，bmp，png格式，大小限制在1MB以内</p>
+			        		</label>
+			            	<div class="file-box">
+			            		<a href="javascript:;">点击上传</a>
+			            	    <input class="file-btn3" type="file" name="pic">
+			            	    <div class="file-img">
+			            	    	<img id="preview3" alt="">
+			            	    </div>
+			            	</div>
+						</div>
+						<div class="exampleImg-box">
+							<img src="../images/example-contact.jpg" alt="">
+						</div>
+					</div>
+					<div class="file-item sub-item">
+						<input type="button" class="authen_btn" value="提 交">
+					</div>
+				</form>
+				<div id="output1"></div>
+			</div>
+			<!-- 待审核 -->
+			<div class="authen-cont to-audit" style="display:none;">
+				<h3>待审核</h3>
+				<div class="audit-tit">
+					正在给您实名认证进行审核，请耐心等候！
+				</div>
+			</div>
+			<!-- 已认证 -->
+			<div class="authen-cont over-authen" style="display:none;">
+				<h3>已完成实名认证</h3>
+				<div class="over-cont">
+					<p class="authen-sess">认证信息</p>
+					<ul>
+						<li class="layui-clear">
+							<span>真实姓名：</span>
+							<em class="user-name">王小二</em>
+						</li>
+						<li class="layui-clear">
+							<span>证件类型：</span>
+							<em>身份证</em>
+						</li>
+						<li class="layui-clear">
+							<span>证件号码：</span>
+							<em class="user-code"></em>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="foot-li layui-clear">
+			<div class="content index-about layui-clear">
+				<ul>
+					<li><a href="javascript:;">关于我们</a></li>
+					<li><a href="javascript:;">在线问答</a></li>
+					<li><a href="javascript:;">交易规则</a></li>
+					<li><a href="javascript:;">费率说明</a></li>
+					<li><a href="javascript:;">用户协议</a></li>
+					<li><a href="javascript:;">法律说明</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content index-link layui-clear">
+			<ul>
+				<li>友情链接：</li>
+				<li><a href="javascript:;">天猫</a></li>
+				<li><a href="javascript:;">京东</a></li>
+				<li><a href="javascript:;">苏宁易购</a></li>
+				<li><a href="javascript:;">亚马逊</a></li>
+				<li><a href="javascript:;">国美</a></li>
+				<li><a href="javascript:;">当当网</a></li>
+				<li><a href="javascript:;">新浪财经</a></li>
+			</ul>
+			<div class="keep-record">
+				CopyRight&copy; 2013-2017 联金行 All Rights Reserved | <a href="http://www.miitbeian.gov.cn" target="_blank">黔IPC备17004311号-2</a> | 市场有风险，投资需谨慎
+			</div>
+		</div>
+		<div class="content foot-end layui-clear">
+			<ul>
+				<li><a class="foot-end-one" href="javascript:;"></a></li>
+				<li><a class="foot-end-two" href="javascript:;"></a></li>
+				<li><a class="foot-end-three" href="javascript:;"></a></li>
+				<li><a class="foot-end-four" href="javascript:;"></a></li>
+			</ul>
+		</div>
+	</div>
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/user.js"></script>
+<script src="../js/plugin/jquery.form.js"></script>
+<script>
+$(function(){
+	var layer = layui.layer;
+	$(".accountVal").val(getCookie("accountCookie"));
+	
+	$(".authen_btn").click(function() {
+		var auth_name = $(".auth_name").val(),
+			card_id = $(".card_id").val(),
+			card_input = $(".card_id"),
+			pre1 = $(".authen-form :input[name='pic_front']"),
+			pre2 = $(".authen-form :input[name='pic_side']"),
+			pre3 = $(".authen-form :input[name='pic']");
+		if(auth_name == ""){
+			layer.msg("请填写您的姓名");
+		}else
+		if(card_id == ""){
+			layer.msg("身份证号码不能为空");
+		}else
+		if(card_id !="" && !/(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/.test(card_input.val())){
+			layer.msg("请填写正确的身份证号码");
+			console.log(card_input.val());
+		}else
+		if(pre1.val() == ""){
+			layer.msg("身份证正面照需要上传");
+		}else
+		if(pre2.val() == ""){
+			layer.msg("身份证反面照需要上传");
+		}else
+		if(pre3.val() == ""){
+			layer.msg("身份证手持照需要上传");
+		}
+		else{
+			var options = {
+					type:"POST",
+					// dataTpye:"jsonp",
+			      	url:config.lineDev1+"/systems/unioncoin/addCerify",
+			      	complete:function(data){
+			        	var obj = JSON.parse(data.responseText);
+		  				var errorMsg = obj.Info;
+		  				var sss = $("#authen").formSerialize();
+		  				console.log($(".accountVal").val());
+		  				console.log(sss);
+		  				if(obj.Code == 0){
+		                    console.log("成功");
+		                }else{
+		                    layer.msg(errorMsg);
+		                }
+			    	}
+			    };
+			$("#authen").ajaxSubmit({
+				type:"POST",
+				// dataTpye:"jsonp",
+		      	url:config.lineDev1+"/systems/unioncoin/addCerify",
+		      	beforeSend:function(){
+                	var index = layer.load(1, {
+					  shade: [0.2,'#fff'] //0.1透明度的白色背景
+					});
+            	},
+		      	complete:function(data){
+		        	var obj = JSON.parse(data.responseText);
+	  				var errorMsg = obj.Info;
+	  				// var sss = $("#authen").formSerialize();
+	  				layer.closeAll("loading");
+	  				if(obj.Code == 0){
+	  					// layer.closeAll("loading");
+	  					window.location.reload();
+	                    console.log("成功");
+	                }else{
+	                    layer.msg(errorMsg);
+	                }
+		    	}
+			});
+		}
+	});
+
+})
+</script>
+</body>

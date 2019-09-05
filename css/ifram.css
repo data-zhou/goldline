@@ -1,0 +1,30 @@
+.layui-form{margin-top: 30px;}
+.layui-form input{color:#666;}
+.layui-form-item .layui-input-block{padding-right: 60px;}
+.layui-form-item .layui-input-inline{width: 120px;}
+.center{text-align: center;}
+.layui-form-item .layui-btn{background-color: #0096e0;margin-top: 20px;}
+.layui-form-item .layui-btn:hover{background-color: #00a2f2;}
+.layui-textarea{min-height: 80px;color:#666;}
+/*用户*/
+.account-form{padding: 10px 60px;}
+.account-form .layui-form-label{width: 100%;box-sizing:border-box;text-align: left;padding-left: 0;padding-right: 0;}
+.account-form .layui-form-item .layui-input-block{padding: 0;margin: 0;}
+.account-form .layui-btn{background-color: #0096e0;margin-top: 50px;padding: 0 50px;}
+.email-tip{float: right;font-size: 12px;color:#ff7272;}
+.password_form{margin-top: 0;}
+.input-code{position: relative;}
+.get-code{display: block;height:36px;line-height: 36px; position: absolute;right: 10px;bottom: 1px;cursor:pointer;color:#0096e0;
+	background-color: #fff;}
+.get-code span{border-left: 1px solid #dedede;padding-left: 12px;}
+.get-code:hover{color:#36bdff;}
+
+
+
+
+
+
+
+
+
+

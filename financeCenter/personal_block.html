@@ -1,0 +1,328 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywordes" content="关键字">
+	<title>财务中心-区块链记录</title>
+	<link rel="stylesheet" href="../layui/css/layui.css">
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/finance.css">
+</head>
+<body>
+	<!-- 导航，顶部 -->
+	<div class="topbar">
+		<div class="top-nav-content">
+			<div class="top-bar-news">
+				<span>流程：</span> 
+				<a href="../financeCenter/personal_recharge.html"><span>充值</span><em></em></a>
+				<a href="../shoppingMall/mallinto.html"><span>购物得联合金</span><em></em></a>
+				<a href="../transCenter/market.html"><span>转换商品值<i class="layui-badge-dot"></i></span><em></em></a>
+				<a href="../shoppingMall/mallout.html"><span>联合金购物</span><em></em></a>
+				<a href="../transCenter/market.html"><span>转出联合金<i class="layui-badge-dot"></i></span><em></em></a>
+				<a href="../financeCenter/personal_carryShow.html"><span>提现</span></a>
+			</div>
+			<ul class="layui-nav topbar-ul" style="display:none;">
+				<li class="layui-nav-item">
+					<a class="nav-list user_phone" href="../userCenter/user_account.html">18002986082</a>
+				</li>
+				<li class="layui-nav-item">
+					<a class="nav-list login_out" href="javascript:;">退出</a>
+				</li>
+			</ul>
+			<ul class="layui-nav top-nav-register">
+				<li class="nav-register-login">
+					<a href="../login/login.html">登录</a>
+				</li>
+				<li>|</li>
+				<li class="nav-register-reg">
+					<a href="../login/register.html">注册</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="head-nav">
+		<div class="head-nav-li">
+			<a class="head-nav-logo" href="javascript:;">
+				<h1><img src="../images/nav-logo.png" alt=""></h1>
+			</a>
+			<div class="navbar-box layui-clear" style="display:none;">
+				<a class="topbar-shop-cart" href="../shoppingMall/shop_cart.html">
+					<label>
+						<i class="layui-icon topbar-icon">&#xe657;</i>
+						<em class="layui-badge" style="display:none;">99</em>
+					</label>
+					<span class="shopping-text">购物车</span>
+				</a>
+			</div>
+			<ul class="layui-nav">
+				<li class="layui-nav-item">
+					<a href="../index.html">首页</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="../shoppingMall/mallinto.html">转换商城</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="../transCenter/market.html">转换中心</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item layui-this">
+					<a href="personal_assets.html">资产管理</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="../userCenter/user_account.html">个人中心</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="../helpCenter/about_us.html">帮助</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 登录 -->
+	<div class="content financeCenter layui-clear">
+		<div class="slide-nav">
+			<h3><i><img src="../images/Frame_caiwugl.png" alt=""></i>财务管理</h3>
+			<ul class="layui-nav layui-nav-tree" lay-filter="demo" style="margin-right: 10px;">
+				<li class="layui-nav-item">
+					<a href="personal_recharge.html">充值</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="personal_carryShow.html">提现</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="personal_assets.html">个人资产</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="personal_capital.html">资金账号</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="personal_entrust.html">委托记录</a>
+				</li>
+				<li class="layui-nav-item layui-this">
+					<a href="personal_block.html">区块链记录</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="personal_integral.html">积分明细</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="personal_comm_into.html">商品转入明细</a>
+				</li>
+			</ul>
+		</div>
+		<div class="finance-content">
+			<div class="volume">
+				<h4 class="notice">
+					<em><i class="layui-icon">&#xe645;</i>系统公告</em><a href="javascript:;">联金行-旨在服务实体经济</a>
+				</h4>
+			</div>
+			<div class="mallPub intoMall">
+				<div class="layui-tab">
+					<ul class="layui-tab-title">
+					    <li class="layui-this">农场值</li>
+					    <li>名酒值</li>
+					    <li>家居值</li>
+					    <li>服装值</li>
+					    <li>名车值</li>
+					</ul>
+					<div class="layui-tab-content">
+					    <div class="layui-tab-item layui-show" id="block_nc_list">
+					    	<div class="layui-tab-content-list">
+					    		<div class="pub-tab personal-trans-id layui-clear">
+					    			<span>转换ID：<i>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</i></span>
+					    			<span class="f-right">转换额：<i>+370</i></span>
+					    		</div>
+					    		<div class="pub-tab personal-address layui-clear">
+					    			<span>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    			<em class="personal-address-icon"><img src="../images/next-tab.png" alt=""></em>
+					    			<span class="f-right">jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    		</div>
+					    		<div class="pub-tab personal-trans-mesg layui-clear">
+					    			<span>服务费：<i>0.03</i><em class="personal-mesg-icon"></em></span>
+					    			<span class="f-right">2017-09-18  17:55:10</span>
+					    		</div>
+					    	</div>
+					    	<div class="layui-tab-content-list">
+					    		<div class="pub-tab personal-trans-id layui-clear">
+					    			<span>转换ID：<i>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</i></span>
+					    			<span class="f-right">转换额：<i>+370</i></span>
+					    		</div>
+					    		<div class="pub-tab personal-address layui-clear">
+					    			<span>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    			<em class="personal-address-icon"><img src="../images/next-tab.png" alt=""></em>
+					    			<span class="f-right">jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    		</div>
+					    		<div class="pub-tab personal-trans-mesg layui-clear">
+					    			<span>服务费：<i>0.03</i><em class="personal-mesg-icon"></em></span>
+					    			<span class="f-right">2017-09-18  17:55:10</span>
+					    		</div>
+					    	</div>
+					    	<div class="layui-tab-content-list">
+					    		<div class="pub-tab personal-trans-id layui-clear">
+					    			<span>转换ID：<i>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</i></span>
+					    			<span class="f-right">转换额：<i>+370</i></span>
+					    		</div>
+					    		<div class="pub-tab personal-address layui-clear">
+					    			<span>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    			<em class="personal-address-icon"><img src="../images/next-tab.png" alt=""></em>
+					    			<span class="f-right">jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    		</div>
+					    		<div class="pub-tab personal-trans-mesg layui-clear">
+					    			<span>服务费：<i>0.03</i><em class="personal-mesg-icon"></em></span>
+					    			<span class="f-right">2017-09-18  17:55:10</span>
+					    		</div>
+					    	</div>
+					    	<div class="laypage-algin-c" id="block_nc_page"></div>
+					    </div>
+					    <div class="layui-tab-item">
+					    	<div class="layui-tab-content-list">
+					    		<div class="pub-tab personal-trans-id layui-clear">
+					    			<span>转换ID：<i>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</i></span>
+					    			<span class="f-right">转换额：<i>+370</i></span>
+					    		</div>
+					    		<div class="pub-tab personal-address layui-clear">
+					    			<span>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    			<em class="personal-address-icon"><img src="../images/next-tab.png" alt=""></em>
+					    			<span class="f-right">jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    		</div>
+					    		<div class="pub-tab personal-trans-mesg layui-clear">
+					    			<span>服务费：<i>0.03</i><em class="personal-mesg-icon"></em></span>
+					    			<span class="f-right">2017-09-18  17:55:10</span>
+					    		</div>
+					    	</div>
+					    	<div class="layui-tab-content-list">
+					    		<div class="pub-tab personal-trans-id layui-clear">
+					    			<span>转换ID：<i>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</i></span>
+					    			<span class="f-right">转换额：<i>+370</i></span>
+					    		</div>
+					    		<div class="pub-tab personal-address layui-clear">
+					    			<span>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    			<em class="personal-address-icon"><img src="../images/next-tab.png" alt=""></em>
+					    			<span class="f-right">jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    		</div>
+					    		<div class="pub-tab personal-trans-mesg layui-clear">
+					    			<span>服务费：<i>0.03</i><em class="personal-mesg-icon"></em></span>
+					    			<span class="f-right">2017-09-18  17:55:10</span>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="layui-tab-item">
+							<div class="layui-tab-content-list">
+					    		<div class="pub-tab personal-trans-id layui-clear">
+					    			<span>转换ID：<i>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</i></span>
+					    			<span class="f-right">转换额：<i>+370</i></span>
+					    		</div>
+					    		<div class="pub-tab personal-address layui-clear">
+					    			<span>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    			<em class="personal-address-icon"><img src="../images/next-tab.png" alt=""></em>
+					    			<span class="f-right">jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    		</div>
+					    		<div class="pub-tab personal-trans-mesg layui-clear">
+					    			<span>服务费：<i>0.03</i><em class="personal-mesg-icon"></em></span>
+					    			<span class="f-right">2017-09-18  17:55:10</span>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="layui-tab-item">
+					    	<div class="tab-content-none">
+					    		暂无相关记录
+					    	</div>
+					    	<div class="layui-tab-content-list" style="display:none;">
+					    		<div class="pub-tab personal-trans-id layui-clear">
+					    			<span>转换ID：<i>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</i></span>
+					    			<span class="f-right">转换额：<i>+370</i></span>
+					    		</div>
+					    		<div class="pub-tab personal-address layui-clear">
+					    			<span>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    			<em class="personal-address-icon"><img src="../images/next-tab.png" alt=""></em>
+					    			<span class="f-right">jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    		</div>
+					    		<div class="pub-tab personal-trans-mesg layui-clear">
+					    			<span>服务费：<i>0.03</i><em class="personal-mesg-icon"></em></span>
+					    			<span class="f-right">2017-09-18  17:55:10</span>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="layui-tab-item">
+							<div class="layui-tab-content-list">
+					    		<div class="pub-tab personal-trans-id layui-clear">
+					    			<span>转换ID：<i>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</i></span>
+					    			<span class="f-right">转换额：<i>+370</i></span>
+					    		</div>
+					    		<div class="pub-tab personal-address layui-clear">
+					    			<span>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    			<em class="personal-address-icon"><img src="../images/next-tab.png" alt=""></em>
+					    			<span class="f-right">jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    		</div>
+					    		<div class="pub-tab personal-trans-mesg layui-clear">
+					    			<span>服务费：<i>0.03</i><em class="personal-mesg-icon"></em></span>
+					    			<span class="f-right">2017-09-18  17:55:10</span>
+					    		</div>
+					    	</div>
+					    	<div class="layui-tab-content-list">
+					    		<div class="pub-tab personal-trans-id layui-clear">
+					    			<span>转换ID：<i>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</i></span>
+					    			<span class="f-right">转换额：<i>+370</i></span>
+					    		</div>
+					    		<div class="pub-tab personal-address layui-clear">
+					    			<span>jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    			<em class="personal-address-icon"><img src="../images/next-tab.png" alt=""></em>
+					    			<span class="f-right">jofdslmdsljfimjskglmckdlsmfdsf1d2fds</span>
+					    		</div>
+					    		<div class="pub-tab personal-trans-mesg layui-clear">
+					    			<span>服务费：<i>0.03</i><em class="personal-mesg-icon"></em></span>
+					    			<span class="f-right">2017-09-18  17:55:10</span>
+					    		</div>
+					    	</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="foot-li layui-clear">
+			<div class="content index-about layui-clear">
+				<ul>
+					<li><a href="javascript:;">关于我们</a></li>
+					<li><a href="javascript:;">在线问答</a></li>
+					<li><a href="javascript:;">交易规则</a></li>
+					<li><a href="javascript:;">费率说明</a></li>
+					<li><a href="javascript:;">用户协议</a></li>
+					<li><a href="javascript:;">法律说明</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content index-link layui-clear">
+			<ul>
+				<li>友情链接：</li>
+				<li><a href="javascript:;">天猫</a></li>
+				<li><a href="javascript:;">京东</a></li>
+				<li><a href="javascript:;">苏宁易购</a></li>
+				<li><a href="javascript:;">亚马逊</a></li>
+				<li><a href="javascript:;">国美</a></li>
+				<li><a href="javascript:;">当当网</a></li>
+				<li><a href="javascript:;">新浪财经</a></li>
+			</ul>
+			<div class="keep-record">
+				CopyRight&copy; 2013-2017 联金行 All Rights Reserved | <a href="http://www.miitbeian.gov.cn" target="_blank">黔IPC备17004311号-2</a> | 市场有风险，投资需谨慎
+			</div>
+		</div>
+		<div class="content foot-end layui-clear">
+			<ul>
+				<li><a class="foot-end-one" href="javascript:;"></a></li>
+				<li><a class="foot-end-two" href="javascript:;"></a></li>
+				<li><a class="foot-end-three" href="javascript:;"></a></li>
+				<li><a class="foot-end-four" href="javascript:;"></a></li>
+			</ul>
+		</div>
+	</div>
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/finance.js"></script>
+</body>

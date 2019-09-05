@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywordes" content="关键字">
+	<title>联金行首页</title>
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!-- 导航，顶部 -->
+	<div class="topbar">
+		<div class="top-nav-content">
+			<div class="top-bar-news">
+				<span>流程：</span> 
+				<a href="financeCenter/personal_recharge.html"><span>充值</span><em></em></a>
+				<a href="shoppingMall/mallinto.html"><span>购物得联合金</span><em></em></a>
+				<a href="transCenter/market.html"><span>转换商品值<i class="layui-badge-dot"></i></span><em></em></a>
+				<a href="shoppingMall/mallout.html"><span>联合金购物</span><em></em></a>
+				<a href="transCenter/market.html"><span>转出联合金<i class="layui-badge-dot"></i></span><em></em></a>
+				<a href="financeCenter/personal_carryShow.html"><span>提现</span></a>
+			</div>
+			<ul class="layui-nav topbar-ul" style="display:none;">
+				<li class="layui-nav-item">
+					<a class="nav-list user_phone" href="userCenter/user_account.html">18002986082</a>
+				</li>
+				<li class="layui-nav-item">
+					<a class="nav-list login_out" href="javascript:;">退出</a>
+				</li>
+			</ul>
+			<ul class="layui-nav top-nav-register">
+				<li class="nav-register-login">
+					<a href="login/login.html">登录</a>
+				</li>
+				<li>|</li>
+				<li class="nav-register-reg">
+					<a href="login/register.html">注册</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="head-nav">
+		<div class="head-nav-li">
+			<a class="head-nav-logo" href="javascript:;">
+				<h1><img src="images/nav-logo.png" alt=""></h1>
+			</a>
+			<div class="navbar-box layui-clear" style="display:none;">
+				<a class="topbar-shop-cart" href="shoppingMall/shop_cart.html">
+					<label>
+						<i class="layui-icon topbar-icon">&#xe657;</i>
+						<em class="layui-badge" style="display:none;">99</em>
+					</label>
+					<span class="shopping-text">购物车</span>
+				</a>
+			</div>
+			<ul class="layui-nav">
+				<li class="layui-nav-item layui-this">
+					<a href="index.html">首页</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="shoppingMall/mallinto.html">转换商城</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="transCenter/market.html">转换中心</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="financeCenter/personal_assets.html">资产管理</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="userCenter/user_account.html">个人中心</a>
+				</li>
+				<li class="layui-nav-item color-ccc">|</li>
+				<li class="layui-nav-item">
+					<a href="helpCenter/about_us.html">帮助</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- banner -->
+	<div class="index-banner">
+		<div class="layui-carousel ibanner">
+			<div class="req-index-banner" carousel-item="">
+				<div class="demo-carousel">
+					<img alt="" src="images/banner1.jpg">
+				</div>
+				<div class="demo-carousel">
+					<img alt="" src="images/banner1.jpg">
+				</div>
+				<div class="demo-carousel">
+					<img alt="" src="images/banner1.jpg">
+				</div>
+			</div>
+			<div class="index-login">
+				<form action="" class="layui-form">
+					<h3>登录联金行</h3>
+					<div class="index-login-use">
+						<label for="">账号：</label>
+						<div class="index-login-useinput">
+							<img src="images/login-use.png" alt="">
+							<input type="text" name="loginPhone" lay-verify="required|phone" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" autocomplete="off" placeholder="请输入手机号">
+						</div>
+					</div>
+					<div class="index-login-pass">
+						<label for="">密码：</label>
+						<div class="index-login-passinput">
+							<img src="images/login-pass.png" alt="">
+							<input type="password" name="password" lay-verify="required|PassWord" placeholder="请输入密码">
+						</div>
+					</div>
+					<input class="index-login-logbtn" type="button" lay-submit="" lay-filter="logbtn" value="登 录">
+					<div class="index-login-prompt layui-clear">
+						<a href="login/forget.html" class="index-login-prompt-forget">忘记密码？</a>
+						<a href="login/register.html">注册</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="volume">
+			<h4 class="notice">
+				<i class="layui-icon">&#xe645;</i><a href="javascript:;">联金行-旨在服务实体经济</a>
+			</h4>
+		</div>
+		<div class="echart-data layui-clear">
+			<ul>
+				<li>
+					<h3>NC/LHJ</h3>
+					<em>2.35</em>
+					<p><i class="green">+718.27</i><span class="green">+4.52%</span></p>
+				</li>
+				<li>
+					<h3>MJ/LHJ</h3>
+					<em>2.35</em>
+					<p><i class="red">-718.27</i><span class="red">-4.52%</span></p>
+				</li>
+				<li>
+					<h3>JJ/LHJ</h3>
+					<em>2.35</em>
+					<p><i class="green">+718.27</i><span class="green">+4.52%</span></p>
+				</li>
+				<li>
+					<h3>FZ/LHJ</h3>
+					<em>2.35</em>
+					<p><i class="red">-718.27</i><span class="red">-4.52%</span></p>
+				</li>
+				<li>
+					<h3>MC/LHJ</h3>
+					<em>2.35</em>
+					<p><i class="red">-718.27</i><span class="red">-4.52%</span></p>
+				</li>
+			</ul>
+		</div>
+		<div class="major">
+			<h4 class="major-title">
+				<p>专业的安全保障</p>
+				<span>THE MOST PROFESSIONAL SECURITY</span>
+			</h4>
+			<div class="major-content layui-clear">
+				<div class="major-list">
+					<a href="javascript:;">
+						<img src="images/Frame_icon-bg01.png" alt="">
+						<img class="imgradio" src="images/Frame_lodi.png" alt="">
+					</a>
+					<span>系统可靠</span>
+				</div>
+				<div class="major-list">
+					<a href="javascript:;">
+						<img src="images/Frame_icon-bg02.png" alt="">
+						<img class="imgradio" src="images/Frame_lodi.png" alt="">
+					</a>
+					<span>资金安全</span>
+				</div>
+				<div class="major-list">
+					<a href="javascript:;">
+						<img src="images/Frame_icon-bg03.png" alt="">
+						<img class="imgradio" src="images/Frame_lodi.png" alt="">
+					</a>
+					<span>支付快捷</span>
+				</div>
+				<div class="major-list">
+					<a href="javascript:;">
+						<img src="images/Frame_icon-bg04.png" alt="">
+						<img class="imgradio" src="images/Frame_lodi.png" alt="">
+					</a>
+					<span>服务专业</span>
+				</div>
+				<div class="major-list">
+					<a href="javascript:;">
+						<img src="images/Frame_icon-bg05.png" alt="">
+						<img class="imgradio" src="images/Frame_lodi.png" alt="">
+					</a>
+					<span>精英团队1</span>
+				</div>
+			</div>
+		</div>
+		<div class="iarticle pd50 layui-clear">
+			<div class="article-cont article-atc article-col1">
+				<dl>
+					<dt class="change-dt change-dt-bg">
+						<h2>官方公告</h2>
+						<p>掌握各类活动咨询</p>
+					</dt>
+					<dd>
+						<a href="javascript:;">
+							<h5>联金行-旨在服务实体经济</h5>
+							<p>联金行积极响应建设贵阳内陆开放型经济试验区顺应贵阳大数据时代金融创新的目标</p>
+							<img src="images/acticle-pic.png" alt="">
+						</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">
+							<h5>联金行-旨在服务实体经济</h5>
+							<p>联金行积极响应建设贵阳内陆开放型经济试验区顺应贵阳大数据时代金融创新的目标</p>
+							<img src="images/acticle-pic.png" alt="">
+						</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">
+							<h5>联金行-旨在服务实体经济</h5>
+							<p>联金行积极响应建设贵阳内陆开放型经济试验区顺应贵阳大数据时代金融创新的目标</p>
+							<img src="images/acticle-pic.png" alt="">
+						</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="article-cont article-col2">
+				<dl>
+					<dt class="change-dt change-dt-bg">
+						<h2>行业咨询</h2>
+						<p>掌握各类活动咨询</p>
+					</dt>
+					<dd>
+						<a href="javascript:;">
+							<h5>联金行-旨在服务实体经济</h5>
+							<p>联金行积极响应建设贵阳内陆开放型经济试验区顺应贵阳大数据时代金融创新的目标</p>
+							<img src="images/acticle-pic.png" alt="">
+						</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">
+							<h5>联金行-旨在服务实体经济</h5>
+							<p>联金行积极响应建设贵阳内陆开放型经济试验区顺应贵阳大数据时代金融创新的目标</p>
+							<img src="images/acticle-pic.png" alt="">
+						</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">
+							<h5>联金行-旨在服务实体经济</h5>
+							<p>联金行积极响应建设贵阳内陆开放型经济试验区顺应目标</p>
+							<img src="images/acticle-pic.png" alt="">
+						</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="article-cont article-col3">
+				<dl>
+					<dt class="change-dt change-dt-bg">
+						<h2>行业咨询</h2>
+						<p>掌握各类活动咨询</p>
+					</dt>
+					<dd>
+						<a href="javascript:;">
+							<h5>联金行-旨在服务实体经济</h5>
+							<p>联金行积极响应建设贵阳内陆开放型经济试验区顺应贵阳大数据时代金融创新的目标应建设贵阳内陆开放型经济试验区顺应贵阳大数据时代金融创新的目标应建设贵阳内陆开放型经济试验区顺应贵阳大数据时代金融创新的目标</p>
+							<img src="images/acticle-pic.png" alt="">
+						</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">
+							<h5>联金行-旨在服务实体经济</h5>
+							<p>联金行积极响应建设贵阳内陆开放型经济试验区顺应贵阳大数据时代金融创新的目标</p>
+							<img src="images/acticle-pic.png" alt="">
+						</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">
+							<h5>联金行-旨在服务实体经济</h5>
+							<p>联金行积极响应建设贵阳内陆开放型经济试验区顺应贵阳大数据时代金融创新的目标</p>
+							<img src="images/acticle-pic.png" alt="">
+						</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="index-contact-us layui-clear">
+			<div class="contact-list">
+				<a href="javascript:;">
+					<img src="images/Frame_qq.png" alt="">
+				</a>
+				<span>官方QQ</span>
+				<span>2933152096</span>
+			</div>
+			<div class="contact-list">
+				<a href="javascript:;">
+					<img src="images/Frame_tl.png" alt="">
+				</a>
+				<span>24小时热线</span>
+				<span>400-118-0566</span>
+			</div>
+			<div class="contact-list">
+				<a href="javascript:;">
+					<img src="images/Frame_wx.png" alt="">
+				</a>
+				<span>官方微信</span>
+				<span>459902052</span>
+			</div>
+			<div class="contact-list">
+				<a href="javascript:;">
+					<img src="images/Frame_em.png" alt="">
+				</a>
+				<span>邮箱地址</span>
+				<span>2933152096@qq.com</span>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="foot-li layui-clear">
+			<div class="content index-about layui-clear">
+				<ul>
+					<li><a href="helpCenter/about_us.html">关于我们</a></li>
+					<li><a href="javascript:;">在线问答</a></li>
+					<li><a href="helpCenter/trde_rules.html">交易规则</a></li>
+					<li><a href="helpCenter/rate_explain.html">费率说明</a></li>
+					<li><a href="helpCenter/user_protocol.html">用户协议</a></li>
+					<li><a href="helpCenter/legal_notice.html">法律说明</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content index-link layui-clear">
+			<ul>
+				<li>友情链接：</li>
+				<li><a href="http://www.tmall.com" target="_blank">天猫</a></li>
+				<li><a href="http://www.jd.com" target="_blank">京东</a></li>
+				<li><a href="http://www.suning.com" target="_blank">苏宁易购</a></li>
+				<li><a href="http://www.amazon.cn" target="_blank">亚马逊</a></li>
+				<li><a href="http://www.gome.com.cn" target="_blank">国美</a></li>
+				<li><a href="http://www.dangdang.com" target="_blank">当当网</a></li>
+				<li><a href="http://finance.sina.com.cn/" target="_blank">新浪财经</a></li>
+			</ul>
+			<div class="keep-record">
+				CopyRight&copy; 2013-2017 联金行 All Rights Reserved | <a href="http://www.miitbeian.gov.cn" target="_blank">黔IPC备17004311号-2</a> | 市场有风险，投资需谨慎
+			</div>
+		</div>
+		<div class="content foot-end layui-clear">
+			<ul>
+				<li><a class="foot-end-one" href="javascript:;"></a></li>
+				<li><a class="foot-end-two" href="javascript:;"></a></li>
+				<li><a class="foot-end-three" href="javascript:;"></a></li>
+				<!-- <li><a class="foot-end-four" href="javascript:;"></a></li> -->
+			</ul>
+		</div>
+	</div>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="layui/layui.all.js"></script>
+<script src="js/plugin/jquery.pseudo.js"></script>
+<script src="js/config.js"></script>
+<script src="js/public.js"></script>
+<script src="js/index.js"></script>
+</body>
